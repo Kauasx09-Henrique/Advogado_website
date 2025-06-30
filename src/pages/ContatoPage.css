@@ -1,0 +1,326 @@
+/* Estilos Gerais */
+.contato-container {
+  background-color: #f8fafc;
+  min-height: calc(100vh - 100px);
+  padding: 3rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contato-content {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  gap: 2.5rem;
+}
+
+/* Painel Esquerdo - Informações de Contato */
+.contato-left {
+  flex: 1;
+  background-color: white;
+  border-radius: 12px;
+  padding: 2.5rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.contato-left h1 {
+  font-size: 2.5rem;
+  color: #1a202c;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #4a5568;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+}
+
+.contato-info {
+  margin-bottom: 2.5rem;
+}
+
+.info-item {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.8rem;
+  align-items: flex-start;
+}
+
+.info-icon {
+  font-size: 1.8rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.3rem;
+}
+
+.info-icon.email {
+  background-color: rgba(26, 61, 124, 0.1);
+  color: #1a3d7c;
+}
+
+.info-icon.phone {
+  background-color: rgba(75, 192, 192, 0.1);
+  color: #4bc0c0;
+}
+
+.info-icon.address {
+  background-color: rgba(255, 159, 64, 0.1);
+  color: #ff9f40;
+}
+
+.contato-left h3 {
+  font-size: 1.2rem;
+  color: #1a3d7c;
+  margin: 0 0 0.3rem 0;
+}
+
+.contato-left p {
+  font-size: 1rem;
+  color: #4a5568;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.map-container {
+  margin-top: 2rem;
+}
+
+.map-placeholder {
+  height: 300px;
+  background-color: #e2e8f0;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  background-image: url('https://images.unsplash.com/photo-1570891836654-d4961a7b6929?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80');
+  background-size: cover;
+  background-position: center;
+}
+
+.map-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+}
+
+.map-button {
+  background-color: #1a3d7c;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.map-button:hover {
+  background-color: #153060;
+}
+
+/* Painel Direito - Formulário e Horários */
+.contato-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 2.5rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.form-card h2 {
+  font-size: 1.8rem;
+  color: #1a202c;
+  margin-top: 0;
+  margin-bottom: 0.3rem;
+}
+
+.form-subtitle {
+  font-size: 1rem;
+  color: #718096;
+  margin-bottom: 2rem;
+}
+
+.contato-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #2d3748;
+  font-size: 0.95rem;
+}
+
+input, select, textarea {
+  padding: 0.9rem 1.2rem;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+input:focus, 
+select:focus, 
+textarea:focus {
+  border-color: #1a3d7c;
+  box-shadow: 0 0 0 3px rgba(26, 61, 124, 0.15);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.checkbox-group {
+  display: flex;
+  gap: 0.8rem;
+  margin: 1rem 0;
+}
+
+.checkbox-group input {
+  margin-top: 0.3rem;
+}
+
+.checkbox-group label {
+  font-size: 0.9rem;
+  color: #4a5568;
+  line-height: 1.5;
+  font-weight: normal;
+}
+
+.submit-btn {
+  background-color: #1a3d7c;
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  margin-top: 0.5rem;
+}
+
+.submit-btn:hover {
+  background-color: #153060;
+  transform: translateY(-2px);
+}
+
+/* Card de Horários */
+.hours-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.hours-card h3 {
+  font-size: 1.4rem;
+  color: #1a202c;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 0.8rem;
+}
+
+.hours-card h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background-color: #e53e3e;
+}
+
+.hours-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hours-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #edf2f7;
+  font-size: 1rem;
+}
+
+.hours-list li:last-child {
+  border-bottom: none;
+}
+
+.emergency-info {
+  display: flex;
+  gap: 1rem;
+  background-color: #fffaf0;
+  padding: 1.2rem;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+  align-items: center;
+}
+
+.emergency-icon {
+  font-size: 1.5rem;
+  color: #dd6b20;
+}
+
+.emergency-info p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #2d3748;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+  .contato-content {
+    flex-direction: column;
+  }
+  
+  .contato-right {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .contato-left h1 {
+    font-size: 2rem;
+  }
+  
+  .form-card h2 {
+    font-size: 1.5rem;
+  }
+  
+  .info-item {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
