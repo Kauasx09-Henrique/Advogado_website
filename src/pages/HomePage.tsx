@@ -3,7 +3,7 @@ import './HomePage.css';
 
 const HomePage = () => {
   const whatsappNumber = "5561985443250"; // Seu número com código do país (55 para Brasil)
-  const whatsappMessage = "Olá, gostaria de informações sobre seus serviços jurídicos.";
+  const whatsappMessage = "Olá, gostaria de comprar um site, poderia me dá informações.";
 
   return (
     <div className="home-container">
